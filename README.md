@@ -18,4 +18,5 @@ Mettre au point une solution plus légeère et réduire l'encombrement du matér
 * Télécharger le système léger à [cet adresse](https://downloads.raspberrypi.org/raspbian_lite_latest)
 * Configurer l'accès SSH et le wi-fi avec une adresse IP statique [à l'aide de ce lien](https://raspbian-france.fr/raspberry-pi-sans-ecran-sans-clavier/)
 **NOTE**: Le fichier à modifier est `/etc/dhcpcd.conf`
-
+# Divers
+* [La liste des raccourcis braille implémentés dans BRLTTY](http://mielke.cc/brltty/doc/KeyBindings/brl-eu-esys_medium.html)
