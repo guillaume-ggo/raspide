@@ -19,5 +19,7 @@ Mettre au point une solution plus légeère et réduire l'encombrement du matér
 * Configurer l'accès SSH et le wi-fi avec une adresse IP statique [à l'aide de ce lien](https://raspbian-france.fr/raspberry-pi-sans-ecran-sans-clavier/)
 **NOTE**: Le fichier à modifier est `/etc/dhcpcd.conf`
 # Liens utiles
+i* [Projet utilisant la librairie ASound)(https://gist.github.com/ghedo/963382)
+* [Documentation sur la librairie ASound](https://www.alsa-project.org/alsa-doc/alsa-lib/pcm.html)
 * [Le site du projet ALSA](http://www.alsa-project.org/main/index.php/SoundcardTesting)
 * [La liste des raccourcis braille implémentés dans BRLTTY](http://mielke.cc/brltty/doc/KeyBindings/brl-eu-esys_medium.html)
