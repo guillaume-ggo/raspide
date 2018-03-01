@@ -31,7 +31,14 @@ aplay -l
 aplay -Ddefault:1 <fichier>
 ```
 
+* Activer l'entrée ligne de la carte son:
+
+```
+amixer -c 1 sset Line,0 80% 80% unmute cap
+```
+
 * Changer la source audio de la carte son:
+
 ```
 #Adapter le nom des contrôles en invoquant d'abord amixer
 amixer -c1 cset iface=MIXER,name='PCM Capture Source' 'Line'
