@@ -32,6 +32,7 @@ aplay -Ddefault:1 <fichier>
 ```
 
 # Liens utiles
+* [Installation de la librairie ASound](https://raspberrypi.stackexchange.com/questions/13171/how-to-get-alsa-lib-on-raspbian)
 * [Projet utilisant la librairie ASound)(https://gist.github.com/ghedo/963382)
 * [Documentation sur la librairie ASound](https://www.alsa-project.org/alsa-doc/alsa-lib/pcm.html)
 * [Le site du projet ALSA](http://www.alsa-project.org/main/index.php/SoundcardTesting)
