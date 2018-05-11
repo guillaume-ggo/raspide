@@ -1,3 +1,5 @@
+#include <alsa/asoundlib.h>
+#include <alsa/mixer.h>
 void SetAlsaMasterVolume(long volume)
 {
     long min, max;
@@ -22,3 +24,8 @@ void SetAlsaMasterVolume(long volume)
     snd_mixer_close(handle);
 }
 
+int main(int argc, char **argv)
+{
+  SetAlsaMasterVolume(100);
+  return 0;
+}
