@@ -6,7 +6,7 @@ void SetAlsaMasterVolume(long volume)
     snd_mixer_t *handle;
     snd_mixer_selem_id_t *sid;
     const char *card = "default";
-    const char *selem_name = "Master";
+    const char *selem_name = "Line";
 
     snd_mixer_open(&handle, 0);
     snd_mixer_attach(handle, card);
@@ -19,6 +19,7 @@ void SetAlsaMasterVolume(long volume)
     snd_mixer_elem_t* elem = snd_mixer_find_selem(handle, sid);
 
     snd_mixer_selem_get_playback_volume_range(elem, &min, &max);
+    printf("min=%i, max=%i\n", min, max);
     snd_mixer_selem_set_playback_volume_all(elem, volume * max / 100);
 
     snd_mixer_close(handle);
@@ -26,6 +27,6 @@ void SetAlsaMasterVolume(long volume)
 
 int main(int argc, char **argv)
 {
-  SetAlsaMasterVolume(100);
+  SetAlsaMasterVolume(60);
   return 0;
 }
